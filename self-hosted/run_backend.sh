@@ -35,5 +35,6 @@ exec ./convex-local-backend "$@" \
     --convex-origin "$CONVEX_CLOUD_ORIGIN" \
     --convex-site "$CONVEX_SITE_ORIGIN" \
     --beacon-tag "self-hosted-docker" \
+    --do-not-require-ssl \
     "${DB_FLAGS[@]}" \
     "$DB_SPEC"
